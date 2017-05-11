@@ -25,7 +25,8 @@ def download_by_id(paper_id):
     paper_title = get_paper_title(paper_id)
     save_title = paper_title.replace(' ', '_')
     # Get pdf url by paper id. Refer to 
-    #   http://stackoverflow.com/questions/22800284/download-papers-from-ieee-xplore-with-wget
+    # http://stackoverflow.com/questions/22800284/download-papers-from-ieee-xplore-with-wget
+    # https://gist.github.com/cuekoo/13c644f4174a4c24540c2fe49d4489fe
     pdf_url = 'http://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&isnumber=&arnumber={}'.format(paper_id)
     sp.call('wget "{}" -O {}.pdf'.format(pdf_url, save_title), shell=True)
     print ('saved pdf to {}'.format(save_title))
