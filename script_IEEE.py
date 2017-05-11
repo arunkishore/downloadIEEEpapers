@@ -45,3 +45,6 @@ for id in arnNumberIEEE:
     download_by_id(id)
 
 shutil.make_archive(date, 'zip', path)
+## TODO:
+## Sciencedirect - https://gehrcke.de/2015/09/download-article-as-pdf-file-from-elseviers-sciencedirect-via-command-line-curl/
+## ACM
