@@ -40,7 +40,7 @@ if not os.path.exists(path):
     os.makedirs(path)
 os.chdir(path)
 
-arnNumberIEEE = [5738219]
+arnNumberIEEE = [7870980,7081334,7265383,7038857,7828598,7170463,6707351,6745541]
 for id in arnNumberIEEE:
     download_by_id(id)
 
