@@ -34,7 +34,7 @@ def download_by_id(paper_id):
 
 ###main()
 date = str(datetime.date.today())
-path = "/Users/ramakrishnanak/Downloads/Josip/"
+path = "/Users/yyyy/Downloads/xxxx/"
 path = path + date
 if not os.path.exists(path):
     os.makedirs(path)
